@@ -7,6 +7,8 @@
     <title> Blog|CEO|CyberStorm TI</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <script type="text/javascript" src="https://unpkg.com/vue"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="shortcut icon" href="favicon.ico">
@@ -107,19 +109,17 @@
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">Rodrigo Lima</div>
                 <div class="text-3">And I'm a <span class="typing"></span></div>
-                <script>
-                    function popup(mylink, windowname) {
-                         if (! window.focus)return true; 
-                         var href;
-                         if (typeof(mylink) == 'string') href=mylink;
-                          else href=mylink.href; 
-                        window.open(href, windowname, 'width=400,height=470,scrollbars=no'); return false; 
-                    }
-                </script>
                 <!--<a href="profile/profile.html" onclick="return popup(this, 'notes')">Digital Card</a>-->
             </div>
         </div>
     </section>
+
+    <script>
+      new Vue({
+        el:"#home"
+      });
+    </script>
+
 
     <!-- about section start -->
     <section class="about" id="about">
